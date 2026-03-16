@@ -1,0 +1,6 @@
+template/
+├── lib/
+│   └── main.dart
+├── web/
+│   └── index.html
+└── pubspec.yaml
