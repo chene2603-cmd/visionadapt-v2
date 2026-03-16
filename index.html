@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>我的页面</title>
+  <title>{{PROJECT_NAME}}</title>
+  <!-- Flutter 引擎需要的 base 标签 -->
+  <base href="/">
+  <!-- 启用深色模式支持 -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #0a0a0a;
+        color: #ffffff;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>部署成功！</h1>
-</body>
-</html>
+  <!-- Flutter 内容将挂载到这个 div -->
+  <div id="flutter_app"></div>
+
+  <!-- 加载 Flutter 主脚本（由 flutter build web 生成） -->
+  <script src="main.dart.js" type="application/javascript">
