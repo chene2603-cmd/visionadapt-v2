@@ -9,8 +9,8 @@
   <!-- 可选：添加 Favicon -->
   <link rel="icon" href="favicon.png">
   <style>
-    /* 基础样式：防止页面闪烁时出现滚动条或背景异常 */
-    html, body {
+    /* 可选：基本样式，防止页面闪烁时背景异常 */
+    body, html {
       margin: 0;
       padding: 0;
       background: #ffffff;
@@ -27,9 +27,12 @@
   </style>
 </head>
 <body>
-  <!-- Flutter 应用挂载点，id 必须与 Flutter 初始化代码中的一致 -->
+  <!-- Flutter 应用挂载点，
+       id 必须与 Flutter 初始化代码中的
+       一致 -->
   <div id="flutter_app"></div>
-  <!-- 加载 Flutter 编译后的主脚本（必须闭合） -->
+  <!-- 加载 Flutter 编译后的主
+       脚本（必须闭合） -->
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
